@@ -5,23 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css">
-    <title>Edit</title>
+    <title>Product Manager</title>
     <link rel="shortcut icon" href="/Images/features.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-4.0.0-beta.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <!--JavaScript-->
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <!--For pop-ups-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/home.html">
+            <img src="/Images/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <li class="collapse navbar-collapse" id="navbarContent">
+            <li class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                    <a class="nav-link" href="/add-product.html"></a>
+                <li class="nav-item">
+                    <a class="nav-link" href=""></a> <!--Link to be added-->
+                </li>
+            </li>
+        </li>
+    </nav>
+    <div class="view">
+        <table class="table">
+            <tr class="table-header">
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Product Category</th>
+                <th>Product Brand</th>
+                <th>Last Modified</th>
+                <!--More Columns to be added-->
+            </tr>
+            <tr class="table-row">
+                <td class="table-cell"></td>
+                <td>
+                    <a href="/edit.html">Edit</a> <!--Link to be added--> 
+                    <a href="">Delete</a> <!--Link to be added--> 
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="main2">
-        <form action="/edit_data" method="POST">
-            <table>
-                    
+        <form action="" method="POST"> <!--Link to be added-->
+            <table>      
+            <tr>
+                <th>
+                    Product ID: 
+                </th>
+                <th>
+                    <input type="number" name="new_p_id">
+                </th>
+            </tr>
             <tr>
                 <th>
                     Quantity: 
                 </th>
                 <th>
-                    <input type="number" name="new_inventory">
+                    <input type="number" name="new_qty">
                 </th>
             </tr>
             <div class="radio">
@@ -46,3 +94,4 @@
         </form>
     </div>
 </body>
+</html>

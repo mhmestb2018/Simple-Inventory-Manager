@@ -33,9 +33,33 @@
             </li>
         </li>
     </nav>
-    <div class="main">
+    <div class="view">
+        <table class="table">
+            <tr class="table-header">
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Product Category</th>
+                <th>Product Brand</th>
+                <th>Last Modified</th>
+                <!--More Columns to be added-->
+            </tr>
+            <tr class="table-row">
+                <td class="table-cell"></td>
+                <td>
+                    <a href="/edit.html">Edit</a> <!--Link to be added--> 
+                    <a href="">Delete</a> <!--Link to be added--> 
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="add">
         <form method="POST" action=""> <!--Link to be added-->
             <table style="margin-top: auto">
+                <tr>
+                    <th>Product ID: </th>
+                    <th><input type="number" name="p-id"></th>
+                </tr>
                 <tr>
                     <th>Product Name: </th>
                     <th><input type="text" name="product-name"></th>
@@ -43,10 +67,6 @@
                 <tr>
                     <th>Quantity: </th>
                     <th><input type="number" name="quantity"></th>
-                </tr>
-                <tr>
-                    <th>Product ID: </th>
-                    <th><input type="number" name="p-id"></th>
                 </tr>
                 <tr>
                     <th>Product Category: </th>
