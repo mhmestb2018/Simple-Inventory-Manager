@@ -2,6 +2,11 @@ body {
     text-align: center;
 }
 
+.filter {
+    text-align: left;
+    padding-left: 25px;
+}
+
 .add {
     text-align: justify;
     display: inline-block;
@@ -51,4 +56,8 @@ th {
 
 .table-cell {
     padding: 8px;
+}
+
+.navbar {
+    margin: auto;
 }
