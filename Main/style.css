@@ -61,3 +61,14 @@ th {
 .navbar {
     margin: auto;
 }
+
+.main3 {
+    text-align: justify;
+    display: inline-block;
+}
+
+.a-btn3 {
+    margin: 0 100%;
+    margin-top: 10px;
+    display: block;
+}
