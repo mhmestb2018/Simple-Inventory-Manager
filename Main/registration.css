@@ -210,6 +210,7 @@ p {
     color: #fff;
     border: none;
     font-size: 15px;
+    transition: 0.8s;
 }
 
 #random h4 {
@@ -226,4 +227,13 @@ p {
 #random input[type="submit"]:hover {
     background-color: #EDF0F2;
     color:#000
+}
+
+#random input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #101540;
+}
+
+#random input[type="checkbox"]:hover {
+    border-color: #101540;
 }
