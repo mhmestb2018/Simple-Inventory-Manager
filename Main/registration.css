@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Responsive Page */
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+    .registration {
+        max-width: 524px;
+        max-height: 524px;
+    }
+    .flora {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    #random input[type="checkbox"] {
+        max-width: 20px;
+        max-height: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+    .registration {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .flora {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    #random input[type="checkbox"] {
+        max-width: 17px;
+        max-height: 17px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .registration {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .flora {
+        max-width: 30px;
+        max-height: 30px;
+    }
+    #random input[type="checkbox"] {
+        max-width: 14px;
+        max-height: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+    .registration {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .flora {
+        max-width: 20px;
+        max-height: 20px;
+    }
+    #random input[type="checkbox"] {
+        max-width: 12px;
+        max-height: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+    .registration {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .flora {
+        max-width: 17px;
+        max-height: 17px;
+    }
+    #random input[type="checkbox"] {
+        max-width: 12px;
+        max-height: 12px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+    .registration {
+        max-width: 90px;
+        max-height: 90px;
+    }
+    .flora {
+        max-width: 14px;
+        max-height: 14px;
+    }
+    #random input[type="checkbox"] {
+        max-width: 12px;
+        max-height: 12px;
+    }
+}
+
+.container div {
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+#regprev {
+    padding-top: 100px;
+}
+
+#random h1 {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif, Medium;
+    color: #101540;
+    padding-top: 25px;
+}
+
+#random h2 {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif, Medium;
+    color: #101540;
+    padding-top: 25px;
+}
+
+#random h3 {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif, Medium;
+    color: #7F7F7F;
+}
+
+#random label {
+    padding-top: 25px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif, Medium;
+    color: #101540;
+}
+
+#random input[type="text"],
+    input[type="password"] {
+   width: 100%;
+   height: 50px;
+   padding: 20px 40px 20px 20px;
+   background-color: #EDF0F2;
+   outline: none;
+   border-color: #000;
+   border-radius: 5px;
+   transition: 0.8s;
+   overflow: hidden;
+   border: 2px solid rgba(173, 175, 189, 0.25);
+}
+
+#random input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+}
+
+label[for="agreement"] {
+    padding: 20px 40px 20px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+p {
+    display: inline;
+}
+
+.highlit {
+    color: #101540;
+    display: inline; 
+    font-weight: 500;
+}
+
+#random input[type="submit"] {
+    border-radius: 25px;
+    height: 60px;
+    width: 247px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+    background-color: #101540;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+}
+
+#random h4 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif, Medium;
+    color: #131313;
+    padding-top: 25px;
+}
+
+.highlit:hover {
+    text-decoration-line: underline;
+}
+
+#random input[type="submit"]:hover {
+    background-color: #EDF0F2;
+    color:#000
+}

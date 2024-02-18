@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/registration.css">
+    <script src="/script.js"></script>
+    <title>Product Manager | Registration</title>
+    <link rel="shortcut icon" href="/Images/features.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oL1G8i/XlZ8+0teqOqUwDAIimjQvT51EBbviL0jjqjGcvqfg2jT4FMI1KZaUjEMf" crossorigin="anonymous"></script> <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script> <!--For pop-ups-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
+</head>
+<body>
+    <div class="container" id="regprev">
+        <img src="/Images/registration.png" class="registration" width="524px" height="524px">
+        <div id="random">
+            <img src="/Images/flora.png" class="flora" width="50px" height="50px">
+            <h1>Register</h1>
+            <h2>Manage all your inventory efficiently</h2>
+            <h3>Let’s get you all set up so you can verify your personal account and begin setting up your work profile</h3>
+            <form action="" method="POST"> <!--Link to be added-->
+                <label>Username</label>
+                <br>
+                <input type="text" name="usernameinp" placeholder="Enter your username" required>
+                <br>
+                <label>Password</label>
+                <br>
+                <input type="password" name="passwordinp" placeholder="minimum of 8 characters" required>
+            </form>
+            <br>
+        <input type="checkbox" name="agreement" id="agreement">
+        <p>I agree to all terms, <p class="highlit">privacy policies, and fees</p></p>
+        <br>
+        <br>
+        <input type="submit" value="Sign Up">
+        <h4>Already have an account? <p class="highlit">Log in</p></h4>
+    </div>
+</body>
+</html>
