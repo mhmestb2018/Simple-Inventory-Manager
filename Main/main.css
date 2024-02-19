@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Responsive Page */
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.container2 {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: #fff;
+}
+
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.container div {
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.container2 div {
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+}
+
+.hamburger-ico {
+    display: flex;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.navbar {
+    font-family: "Poppins";
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #fff;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    display: flex
+}
+
+.search {
+    margin-left: 1100px;
+    border: 5px solid #eaeaea;
+    width: 35px;
+    height: 35px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.notif {
+    padding-top: 3px;
+    margin-left: 25px;
+}
+
+.profile {
+    margin-left: 25px;
+    border: 5px solid #eaeaea;
+    width: auto;
+    height: auto;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+.snackbar {
+    background-image: linear-gradient(#1565C0, #1A92EF);
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 10px;
+    position: fixed;
+    left: 10px;
+    width: 100px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dashboard {
+    margin-top: 25px;
+}
+
+body {
+    background: #edf0f2;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.container a {
+    color: #000;
+}
+
+.container h1 {
+    font-family: "Poppins", Medium;
+    font-size: 32px;
+    color: #6CB1EE;
+}
+
+.container .add-btn {
+    margin-left: 900px;
+    margin-top: 25px;
+}
+
+.add {
+    background: #1E88E5;
+    font-family: "Poppins";
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 50px;
+}
+
+#hor-line {
+    height: 1px;
+    width: 500px;
+}
