@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/Main/main.css">
     <script src="/Main/main.js"></script>
     <title>Product Manager | Registration</title>
-    <link rel="shortcut icon" href="/Images/features.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Main/Images/flora.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oL1G8i/XlZ8+0teqOqUwDAIimjQvT51EBbviL0jjqjGcvqfg2jT4FMI1KZaUjEMf" crossorigin="anonymous"></script> <!--JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script> <!--For pop-ups-->
@@ -48,20 +48,24 @@
     <div id="hor-line"></div>
     <div class="container2">
         <div class="quickie">
-            <input type="search" class="qsearch" id="qsearch" placeholder="Quick Search">
+            <div class="searchbar">
+                <img src="/Main/Images/search-interface-symbol.png" class="search-ico-ico" width="25px" height="25px">
+                <input type="search" class="qsearch" id="qsearch" placeholder="Quick Search">
+            </div>
         </div>
         <div class="calendar">
             <input type="date" class="calendaryo" id="calendaryo">
         </div>
-        <div class="status-filter">
-            <span class="selected">Status</span>
-            <div class="caret"></div>
-            <ul class="menu">
-                <li>Full</li>
-                <li>In Stock</li>
-                <li>Out of Stock</li>
+        <div class="dropdown-center">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Status
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Full Stock</a></li>
+              <li><a class="dropdown-item" href="#">In Stock</a></li>
+              <li><a class="dropdown-item" href="#">Out of Stock</a></li>
             </ul>
-        </div>
+          </div>
     </div>
 </body>
 </html>

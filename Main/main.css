@@ -192,3 +192,49 @@ h1 {
     height: 1px;
     width: 500px;
 }
+
+.btn {
+    background: #fff;
+    color: #000;
+    font-family: "Poppins";
+    font-size: 24px;
+    border-radius: 5px;
+    border-color: #edf0f2;
+    outline: none;
+}
+
+.btn:hover {
+    background: #1E88E5;
+    border: none;
+}
+
+.calendaryo {
+    margin-left: 800px;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+    border-color: #edf0f2;
+}
+
+.calendaryo:hover {
+    background: #1E88E5;
+    border: none;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+}
+
+.searchbar input {
+    width: 100%;
+    font-size: 16px;
+    font-family: "Poppins";
+    border: none;
+    outline: none;
+    padding: 6px 0px;
+}
