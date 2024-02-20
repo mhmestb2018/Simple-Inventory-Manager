@@ -42,7 +42,27 @@
             <h1>In stock</h1>
         </div>
         <div class="add-btn">
-            <input type="button" class="add" onclick="" value=" + New Stock "></input>
+            <input type="button" class="add" onclick="openStockModal()" value=" + New Stock "></input>
+        </div>
+        <div id="stock-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="newStockForm">
+                    <label for="product-id">Product ID:</label>
+                    <input type="number" id="product-id" name="product-id" required>
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product-name" required>
+                    <label for="product-category">Category:</label>
+                    <input type="text" id="product-category" name="product-category" required>
+                    <label for="product-brand">Brand:</label>
+                    <input type="text" id="product-brand" name="product-brand">
+                    <label for="product-notes">Notes:</label>
+                    <input type="text" id="product-notes" name="product-notes">
+                    <label for="product-count">Count:</label>
+                    <input type="number" id="product-count" name="product-count">
+                    <input type="submit" value="Add Item">
+                </form>
+            </div>
         </div>
     </div>
     <div id="hor-line"></div>
@@ -61,11 +81,27 @@
               Status
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Full Stock</a></li>
               <li><a class="dropdown-item" href="#">In Stock</a></li>
               <li><a class="dropdown-item" href="#">Out of Stock</a></li>
             </ul>
-          </div>
+        </div>
+    </div>
+    <div id="hor-line"></div>
+    <div class="container3">
+        <div class="view">
+            <table class="table">
+                <tr class="table-header">
+                    <th><input type="checkbox" class="checker"></th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Notes</th>
+                    <th>Count</th>
+                    <th>Status</th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
