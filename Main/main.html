@@ -8,10 +8,10 @@
     <script src="/Main/main.js"></script>
     <title>Product Manager</title>
     <link rel="shortcut icon" href="/Main/Images/flora.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oL1G8i/XlZ8+0teqOqUwDAIimjQvT51EBbviL0jjqjGcvqfg2jT4FMI1KZaUjEMf" crossorigin="anonymous"></script> <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-oL1G8i/XlZ8+0teqOqUwDAIimjQvT51EBbviL0jjqjGcvqfg2jT4FMI1KZaUjEMf" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.6.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script> <!--For pop-ups-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
+    <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.3"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -42,7 +42,7 @@
             <h1>In stock</h1>
         </div>
         <div class="add-btn">
-            <input type="button" class="add" onclick="openStockModal()" value=" + New Stock "></input>
+            <input type="button" class="add" onclick="openStockModal()" value=" + New Stock ">
         </div>
     </div>
     <div id="stock-modal" class="modal">
@@ -63,7 +63,7 @@
                 <br>
                 <label for="product-brand">Brand:</label>
                 <br>
-                <input type="text" id="product-brand" name="product-brand">
+                <input type="text" id="product-brand" name="product-brand" required>
                 <br>
                 <label for="product-notes">Notes:</label>
                 <br>
@@ -71,10 +71,41 @@
                 <br>
                 <label for="product-count">Count:</label>
                 <br>
-                <input type="number" id="product-count" name="product-count">
+                <input type="number" id="product-count" name="product-count" required>
                 <br>
                 <br>
                 <input type="submit" value="Add Item">
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+    <div id="edit-stock-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <form id="editStockForm">
+                <label for="product-name">Product Name:</label>
+                <br>
+                <input type="text" id="edit-product-name" name="product-name" required>
+                <br>
+                <label for="product-category">Category:</label>
+                <br>
+                <input type="text" id="edit-product-category" name="product-category" required>
+                <br>
+                <label for="product-brand">Brand:</label>
+                <br>
+                <input type="text" id="edit-product-brand" name="product-brand" required>
+                <br>
+                <label for="product-notes">Notes:</label>
+                <br>
+                <input type="text" id="edit-product-notes" name="product-notes">
+                <br>
+                <label for="product-count">Count:</label>
+                <br>
+                <input type="number" id="edit-product-count" name="product-count" required>
+                <br>
+                <br>
+                <input type="submit" id="editSubmitButton" value="Save Changes">
                 <br>
                 <br>
             </form>
@@ -106,7 +137,6 @@
         <div class="view">
             <table class="table">
                 <tr class="table-header">
-                    <th><input type="checkbox" class="checker"></th>
                     <th>Product ID</th>
                     <th>Product Name</th>
                     <th>Category</th>
@@ -114,6 +144,7 @@
                     <th>Notes</th>
                     <th>Count</th>
                     <th>Status</th>
+                    <th></th>
                 </tr>
             </table>
         </div>
