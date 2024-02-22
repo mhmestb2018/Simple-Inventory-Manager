@@ -47,9 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('product-brand-edit').value = row.cells[4].textContent;
         document.getElementById('product-notes-edit').value = row.cells[5].textContent;
         document.getElementById('product-count-edit').value = row.cells[6].textContent;
-
-        console.log("Editing row for product ID:", productId); // Add this line
-        console.log("Row content:", row.cells); // Add this line
     }
 
     function openStockModal() {
@@ -74,23 +71,26 @@ document.addEventListener('DOMContentLoaded', function () {
         var productName = document.getElementById('edit-product-name').value;
         var category = document.getElementById('edit-product-category').value;
         var brand = document.getElementById('edit-product-brand').value;
-        var notes = document.getElementById('edit-product-notes').value;
         var count = document.getElementById('edit-product-count').value;
     
-        // Use the stored rowIndex to find the row in the table
+        if (!productName || !category || !brand || !count) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+    
         var editedRow = document.querySelector('.table').rows[editingRowIndex];
     
         if (editedRow) {
             editedRow.cells[1].textContent = productName;
             editedRow.cells[2].textContent = category;
             editedRow.cells[3].textContent = brand;
-            editedRow.cells[4].textContent = notes;
             editedRow.cells[5].textContent = count;
-        }
     
-        document.getElementById('edit-stock-modal').style.display = 'none';
-        closeEditModal();
+            document.getElementById('edit-stock-modal').style.display = 'none';
+            closeEditModal();
+        }
     });
+    
             
     function closeEditModal() {
         clearInputValues('edit');
