@@ -1,354 +1,353 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 /* Responsive Page */
 .container {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background: #fff;
-    margin-top: 1rem;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: #fff;
+  margin-top: 1rem;
 }
 
 .container2 {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background: #fff;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: #fff;
 }
 
 .container3 {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background: #fff;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: #fff;
 }
 
 @media (max-width: 1536px) {
-    .container {
-        max-width: 1280px;
-    }
+  .container {
+    max-width: 1280px;
+  }
 }
 
 @media (max-width: 1280px) {
-    .container {
-        max-width: 1024px;
-    }
+  .container {
+    max-width: 1024px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .container {
-        max-width: 768px;
-    }
+  .container {
+    max-width: 768px;
+  }
 }
 
 @media (max-width: 768px) {
-    .container {
-        max-width: 640px;
-    }
+  .container {
+    max-width: 640px;
+  }
 }
 
 @media (max-width: 640px) {
-    .container {
-        max-width: 475px;
-    }
+  .container {
+    max-width: 475px;
+  }
 }
 
 @media (max-width: 475px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 }
 
 .container div {
-    align-items: center;
-    margin: 20px;
-    width: 100%;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
 }
 
 .container2 div {
-    align-items: center;
-    margin: 20px;
-    width: 100%;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
 }
 
 .container3 div {
-    align-items: center;
-    margin: 20px;
-    width: 100%;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
 }
 
 .hamburger-ico {
-    display: flex;
-    padding-left: 25px;
-    padding-top: 25px;
+  display: flex;
+  padding-left: 25px;
+  padding-top: 25px;
 }
 
 .navbar {
-    font-family: "Poppins";
-    padding-right: 15px;
-    padding-left: 15px;
-    background: #fff;
+  font-family: "Poppins";
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #fff;
 }
 
 .navdiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    list-style: none;
-    display: flex
+  list-style: none;
+  display: flex;
 }
 
 .search {
-    margin-left: 1100px;
-    border: 5px solid #eaeaea;
-    width: 35px;
-    height: 35px;
-    background-color: #eaeaea;
-    border-radius: 10px;
+  margin-left: 1100px;
+  border: 5px solid #eaeaea;
+  width: 35px;
+  height: 35px;
+  background-color: #eaeaea;
+  border-radius: 10px;
 }
 
 .notif {
-    padding-top: 3px;
-    margin-left: 25px;
+  padding-top: 3px;
+  margin-left: 25px;
 }
 
 .profile {
-    margin-left: 25px;
-    border: 5px solid #eaeaea;
-    width: auto;
-    height: auto;
-    background-color: #eaeaea;
-    border-radius: 10px;
+  margin-left: 25px;
+  border: 5px solid #eaeaea;
+  width: auto;
+  height: auto;
+  background-color: #eaeaea;
+  border-radius: 10px;
 }
 
 .snackbar {
-    background-image: linear-gradient(#1565C0, #1A92EF);
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    padding-left: 10px;
-    position: fixed;
-    left: 10px;
-    width: 100px;
-    height: 100%;
+  background-image: linear-gradient(#1565c0, #1a92ef);
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 10px;
+  position: fixed;
+  left: 10px;
+  width: 100px;
+  height: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .dashboard {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 body {
-    background: #edf0f2;
+  background: #edf0f2;
 }
 
 h1 {
-    font-family: "Poppins";
-    font-size: 12px;
-    margin-top: 5px;
+  font-family: "Poppins";
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .container a {
-    color: #000;
+  color: #000;
 }
 
 .container h1 {
-    font-family: "Poppins", Medium;
-    font-size: 32px;
-    color: #6CB1EE;
+  font-family: "Poppins", Medium;
+  font-size: 32px;
+  color: #6cb1ee;
 }
 
 .container .add-btn {
-    margin-left: 900px;
-    margin-top: 25px;
+  margin-left: 900px;
+  margin-top: 25px;
 }
 
 .add {
-    background: #1E88E5;
-    font-family: "Poppins";
-    font-size: 24px;
-    color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    height: 50px;
+  background: #1e88e5;
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 50px;
 }
 
 .add:hover {
-    background: #f5f5f5;
-    border: none;
+  background: #f5f5f5;
+  border: none;
 }
 
 #hor-line {
-    height: 1px;
-    width: 500px;
+  height: 1px;
+  width: 500px;
 }
 
 .btn {
-    background: #fff;
-    color: #000;
-    font-family: "Poppins";
-    font-size: 24px;
-    border-radius: 5px;
-    border-color: #edf0f2;
-    outline: none;
+  background: #fff;
+  color: #000;
+  font-family: "Poppins";
+  font-size: 24px;
+  border-radius: 5px;
+  border-color: #edf0f2;
+  outline: none;
 }
 
 .btn:hover {
-    background: #1E88E5;
-    border: none;
+  background: #1e88e5;
+  border: none;
 }
 
 .calendaryo {
-    margin-left: 800px;
-    margin-top: 20px;
-    width: 20px;
-    height: 20px;
-    transition: 0.3s;
-    border-radius: 5px;
-    border-color: #edf0f2;
+  margin-left: 800px;
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+  border-color: #edf0f2;
 }
 
 .calendaryo:hover {
-    background: #1E88E5;
-    border: none;
+  background: #1e88e5;
+  border: none;
 }
 
 .searchbar {
-    display: flex;
-    width: 100%;
-    border-width: 0px 0px 2px 0px;
-    border-style: solid;
+  display: flex;
+  width: 100%;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
 }
 
 .searchbar input {
-    width: 100%;
-    font-size: 16px;
-    font-family: "Poppins";
-    border: none;
-    outline: none;
-    padding: 6px 0px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Poppins";
+  border: none;
+  outline: none;
+  padding: 6px 0px;
 }
 
 .checker {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .table {
-    border-spacing: 0;
-    margin: 1rem;
-    background-color: #f5f5f5;
+  border-spacing: 0;
+  margin: 1rem;
+  background-color: #f5f5f5;
 }
 
 .table-row:nth-child(even) {
-
-    background-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .table-header {
-    text-align: left;
+  text-align: left;
 }
 
 .table-cell {
-    padding: 8px;
+  padding: 8px;
 }
 
 th {
-    text-align: center;
-    font-family: "Poppins";
-    font-size: 20px;
-    font-weight: lighter;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 .modal {
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 500px;
-    margin-top: 250px;
-    position: fixed;
-    left: 20px;
-    right: 20px;
-    width: 500px;
-    height: 1000px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 500px;
+  margin-top: 250px;
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  width: 500px;
+  height: 1000px;
 }
 
 input {
-text-align: center;
+  text-align: center;
 }
 
 .table th,
 .table td {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .edit-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 #edit-stock-modal {
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 500px;
-    margin-top: 250px;
-    position: fixed;
-    left: 20px;
-    right: 20px;
-    width: 500px;
-    height: 1000px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 500px;
+  margin-top: 250px;
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  width: 500px;
+  height: 1000px;
 }
 
 .modal-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .close {
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #eaeaea;
-    text-decoration: none;
-    cursor: pointer;
+  color: #eaeaea;
+  text-decoration: none;
+  cursor: pointer;
 }

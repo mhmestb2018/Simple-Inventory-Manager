@@ -4,6 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
     var newStockCloseBtn = document.querySelector("#stock-modal .close");
     var editingRowIndex;
 
+    var productCountInput = document.getElementById('product-count');
+    productCountInput.addEventListener('input', function () {
+        if (parseInt(productCountInput.value) < 0) {
+            productCountInput.value = 0;
+        }
+    });
+
+    var editProductCountInput = document.getElementById('edit-product-count');
+    editProductCountInput.addEventListener('input', function () {
+        if (parseInt(editProductCountInput.value) < 0) {
+            editProductCountInput.value = 0;
+        }
+    });
+
     newStockCloseBtn.addEventListener('click', function () {
         clearInputValues();
         modal.style.display = 'none';
@@ -71,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var productName = document.getElementById('edit-product-name').value;
         var category = document.getElementById('edit-product-category').value;
         var brand = document.getElementById('edit-product-brand').value;
+        var notes = document.getElementById('edit-product-notes').value;
         var count = document.getElementById('edit-product-count').value;
     
         if (!productName || !category || !brand || !count) {
@@ -81,13 +96,23 @@ document.addEventListener('DOMContentLoaded', function () {
         var editedRow = document.querySelector('.table').rows[editingRowIndex];
     
         if (editedRow) {
+            var originalCount = parseInt(editedRow.cells[5].textContent);
             editedRow.cells[1].textContent = productName;
             editedRow.cells[2].textContent = category;
             editedRow.cells[3].textContent = brand;
+            editedRow.cells[4].textContent = notes;
             editedRow.cells[5].textContent = count;
+    
+            if (originalCount > 0 && count == 0) {
+                editedRow.cells[6].textContent = 'Out of Stock';
+            } else {
+                editedRow.cells[6].textContent = 'In Stock';
+            }
     
             document.getElementById('edit-stock-modal').style.display = 'none';
             closeEditModal();
+
+            clearEditInputValues();
         }
     });
     
@@ -140,8 +165,6 @@ document.addEventListener('DOMContentLoaded', function () {
             editedRow.cells[4].innerHTML = editedProductNotes;
             editedRow.cells[5].innerHTML = editedProductCount;
 
-            console.log("Updated row for product ID:", productId); // Add this line
-            console.log("Row content:", editedRow.cells); // Add this line
         }
 
         document.getElementById('edit-stock-modal').style.display = 'none';
@@ -158,6 +181,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('product-brand').value = '';
         document.getElementById('product-notes').value = '';
         document.getElementById('product-count').value = '';
+    }
+
+    function clearEditInputValues() {
+        document.getElementById('edit-product-name').value = '';
+        document.getElementById('edit-product-category').value = '';
+        document.getElementById('edit-product-brand').value = '';
+        document.getElementById('edit-product-notes').value = '';
+        document.getElementById('edit-product-count').value = '';
     }
 
     var newStockCloseBtn = document.querySelector("#stock-modal .close");
@@ -183,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var brand = document.getElementById('product-brand').value;
         var notes = document.getElementById('product-notes').value;
         var count = document.getElementById('product-count').value;
-
+        
         var table = document.querySelector('.table');
         var rows = table.querySelectorAll('tr');
 
@@ -206,8 +237,6 @@ document.addEventListener('DOMContentLoaded', function () {
             existingRow.cells[5].innerHTML = count;
             existingRow.cells[6].innerHTML = (count == 0) ? 'Out of Stock' : 'In Stock';
 
-            console.log("Updated existing row for product ID:", productId); // Add this line
-            console.log("Row content:", existingRow.cells); // Add this line
         } else {
             var newRow = table.insertRow(-1);
 
@@ -229,8 +258,7 @@ document.addEventListener('DOMContentLoaded', function () {
             statusCell.innerHTML = (count == 0) ? 'Out of Stock' : 'In Stock';
             checkBoxCell.appendChild(createEditButton());
 
-            console.log("Added new row for product ID:", productId); // Add this line
-            console.log("Row content:", newRow.cells); // Add this line
+
         }
 
         clearInputValues();
@@ -238,7 +266,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-jQuery.expr[':'].contains = function (a, i, m) {
+/*jQuery.expr[':'].contains = function (a, i, m) {
     return jQuery(a).text().toUpperCase()
         .indexOf(m[3].toUpperCase()) >= 0;
 };
+
+
+var firebaseConfig = {
+        apiKey: "AIzaSyDwfuUpnlPk4ccotRyAkQKU58KGOCbdGrs",
+        authDomain: "simple-inventory-manager-7180f.firebaseapp.com",
+        projectId: "simple-inventory-manager-7180f",
+        storageBucket: "simple-inventory-manager-7180f.appspot.com",
+        messagingSenderId: "660012179034",
+        appId: "1:660012179034:web:d581aeb13178459126c263",
+        measurementId: "G-1PPTLXZWBM"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+
+function writeToFirebase(product) {
+    const productsRef = database.ref('products');
+
+    productsRef.child(product.productId).set(product)
+        .then(() => console.log('Data written to Firebase'))
+        .catch(error => console.error('Error writing data to Firebase:', error));
+}
+
+writeToFirebase(product);*/
